@@ -36,12 +36,13 @@ var Form1 = React.createClass({
 
 					<div className="jumbotron">
 						<div className="panel-title text-center">
-							<h2>Tracking</h2>
+							<h1>Tracking</h1>
 							
 						</div>
 					</div>
 
 					<div class="container">
+					<div className="col-sm-12">
 						<div className="panel-body text-center">
 							<div className="btn-group-vertical">
 								<button type="button" className="btn btn-primary">Clients</button>
@@ -49,14 +50,14 @@ var Form1 = React.createClass({
 								<button type="button" className="btn btn-primary">Consultant Lookup</button>
 							</div>
   						</div>
-
+					</div>
 					</div>
 
 					<div className="col-md-6">
 				
 						<div className="panel panel-default">
 							<div className="panel-heading">
-								<h3 className="panel-title text-center">Data Entry</h3>
+								<div className="panel-title text-center"><strong>Data Entry</strong></div>
 							</div>
 							<div className="panel-body text-center">
 
@@ -79,7 +80,7 @@ var Form1 = React.createClass({
 				
 						<div className="panel panel-default">
 							<div className="panel-heading">
-								<h3 className="panel-title text-center">Reports</h3>
+								<div className="panel-title text-center"><strong>Reports</strong></div>
 							</div>
 							<div className="panel-body text-center">
 

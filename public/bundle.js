@@ -51,7 +51,7 @@
 	var ReactDOM = __webpack_require__(158);
 
 	// Include the Main Component
-	var Form1 = __webpack_require__(160);
+	var Form1 = __webpack_require__(159);
 
 	// This code here allows us to render our main component (in this case "Form")
 	ReactDOM.render(React.createElement(Form1, null), document.getElementById('app'));
@@ -19751,8 +19751,7 @@
 
 
 /***/ },
-/* 159 */,
-/* 160 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19801,7 +19800,7 @@
 							"div",
 							{ className: "panel-title text-center" },
 							React.createElement(
-								"h2",
+								"h1",
 								null,
 								"Tracking"
 							)
@@ -19812,20 +19811,24 @@
 						{ "class": "container" },
 						React.createElement(
 							"div",
-							{ className: "panel-body text-center" },
+							{ className: "col-sm-12" },
 							React.createElement(
 								"div",
-								{ className: "btn-group-vertical" },
+								{ className: "panel-body text-center" },
 								React.createElement(
-									"button",
-									{ type: "button", className: "btn btn-primary" },
-									"Clients"
-								),
-								React.createElement("h3", null),
-								React.createElement(
-									"button",
-									{ type: "button", className: "btn btn-primary" },
-									"Consultant Lookup"
+									"div",
+									{ className: "btn-group-vertical" },
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"Clients"
+									),
+									React.createElement("h3", null),
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"Consultant Lookup"
+									)
 								)
 							)
 						)
@@ -19840,9 +19843,13 @@
 								"div",
 								{ className: "panel-heading" },
 								React.createElement(
-									"h3",
+									"div",
 									{ className: "panel-title text-center" },
-									"Data Entry"
+									React.createElement(
+										"strong",
+										null,
+										"Data Entry"
+									)
 								)
 							),
 							React.createElement(
@@ -19895,9 +19902,13 @@
 								"div",
 								{ className: "panel-heading" },
 								React.createElement(
-									"h3",
+									"div",
 									{ className: "panel-title text-center" },
-									"Reports"
+									React.createElement(
+										"strong",
+										null,
+										"Reports"
+									)
 								)
 							),
 							React.createElement(
