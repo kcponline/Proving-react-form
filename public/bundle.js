@@ -51,10 +51,10 @@
 	var ReactDOM = __webpack_require__(158);
 
 	// Include the Main Component
-	var Form = __webpack_require__(159);
+	var Form1 = __webpack_require__(160);
 
 	// This code here allows us to render our main component (in this case "Form")
-	ReactDOM.render(React.createElement(Form, null), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Form1, null), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -19751,7 +19751,8 @@
 
 
 /***/ },
-/* 159 */
+/* 159 */,
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -19760,8 +19761,8 @@
 	var React = __webpack_require__(1);
 
 	// This is the main component. It includes the banner and form element.
-	var Form = React.createClass({
-		displayName: "Form",
+	var Form1 = React.createClass({
+		displayName: "Form1",
 
 
 		// Here we set a generic state associated with the text being searched for
@@ -19797,17 +19798,35 @@
 						"div",
 						{ className: "jumbotron" },
 						React.createElement(
-							"h2",
-							null,
-							"Form Capture"
-						),
-						React.createElement(
-							"p",
-							null,
+							"div",
+							{ className: "panel-title text-center" },
 							React.createElement(
-								"em",
+								"h2",
 								null,
-								"Type numbers and text in the appropriate boxes."
+								"Tracking"
+							)
+						)
+					),
+					React.createElement(
+						"div",
+						{ "class": "container" },
+						React.createElement(
+							"div",
+							{ className: "panel-body text-center" },
+							React.createElement(
+								"div",
+								{ className: "btn-group-vertical" },
+								React.createElement(
+									"button",
+									{ type: "button", className: "btn btn-primary" },
+									"Clients"
+								),
+								React.createElement("h3", null),
+								React.createElement(
+									"button",
+									{ type: "button", className: "btn btn-primary" },
+									"Consultant Lookup"
+								)
 							)
 						)
 					),
@@ -19823,48 +19842,44 @@
 								React.createElement(
 									"h3",
 									{ className: "panel-title text-center" },
-									"Form"
+									"Data Entry"
 								)
 							),
 							React.createElement(
 								"div",
 								{ className: "panel-body text-center" },
 								React.createElement(
-									"form",
-									null,
+									"div",
+									{ className: "btn-group-vertical" },
 									React.createElement(
-										"div",
-										{ className: "form-group" },
-										React.createElement(
-											"h4",
-											{ className: "" },
-											React.createElement(
-												"strong",
-												null,
-												"Number 1"
-											)
-										),
-										React.createElement("input", { type: "number", value: this.state.value, className: "form-control ", id: "num1", onChange: this.handleChange, required: true }),
-										React.createElement(
-											"h4",
-											{ className: "" },
-											React.createElement(
-												"strong",
-												null,
-												"Number 2"
-											)
-										),
-										React.createElement("input", { type: "number", value: this.state.value, className: "form-control ", id: "num2", onChange: this.handleChange, required: true }),
-										React.createElement(
-											"h4",
-											{ className: "" },
-											React.createElement(
-												"strong",
-												null,
-												"Random Text"
-											)
-										),
-										React.createElement("input", { type: "text", value: this.state.value, className: "form-control ", id: "text", onChange: this.handleChange, required: true })
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"NPR Deadlines"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"Update Status for NPRs"
+									),
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"Model Form Entry"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"Input Model Form"
+									),
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"Tracking Entry"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"Input Deadlines"
 									)
 								)
 							)
@@ -19882,34 +19897,44 @@
 								React.createElement(
 									"h3",
 									{ className: "panel-title text-center" },
-									"Results"
+									"Reports"
 								)
 							),
 							React.createElement(
 								"div",
 								{ className: "panel-body text-center" },
 								React.createElement(
-									"form",
-									null,
+									"div",
+									{ className: "btn-group-vertical" },
 									React.createElement(
-										"div",
-										{ className: "form-group" },
-										React.createElement(
-											"h2",
-											null,
-											this.state.num1,
-											" + ",
-											this.state.num2,
-											" = ",
-											this.state.num1 + this.state.num2
-										),
-										React.createElement(
-											"h2",
-											null,
-											this.state.text,
-											" Reversed: ",
-											this.state.text.split("").reverse().join("")
-										)
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"QRS Deadline Report"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"Only Deadlines"
+									),
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"NPR Deadlines Pursue"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"NPR Deadlines Pursue"
+									),
+									React.createElement(
+										"button",
+										{ type: "button", className: "btn btn-primary" },
+										"All NPR Apeeals"
+									),
+									React.createElement(
+										"h3",
+										null,
+										"NPR Deadlines All"
 									)
 								)
 							)
@@ -19921,7 +19946,7 @@
 	});
 
 	// Export the componen back for use in other files
-	module.exports = Form;
+	module.exports = Form1;
 
 /***/ }
 /******/ ]);
