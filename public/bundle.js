@@ -19767,9 +19767,9 @@
 		// Here we set a generic state associated with the text being searched for
 		getInitialState: function getInitialState() {
 			return {
-				num1: 0,
-				num2: 0,
-				text: ""
+				num1: "",
+				num2: "",
+				text: true
 			};
 		},
 
@@ -19841,30 +19841,30 @@
 											React.createElement(
 												"strong",
 												null,
-												"Number 1"
+												"Quarterback 1"
 											)
 										),
-										React.createElement("input", { type: "number", value: this.state.value, className: "form-control ", id: "num1", onChange: this.handleChange, required: true }),
+										React.createElement("input", { type: "text", value: this.state.value, className: "form-control ", id: "num1", onChange: this.handleChange, required: true }),
 										React.createElement(
 											"h4",
 											{ className: "" },
 											React.createElement(
 												"strong",
 												null,
-												"Number 2"
+												"Quarterback 2"
 											)
 										),
-										React.createElement("input", { type: "number", value: this.state.value, className: "form-control ", id: "num2", onChange: this.handleChange, required: true }),
+										React.createElement("input", { type: "text", value: this.state.value, className: "form-control ", id: "num2", onChange: this.handleChange, required: true }),
 										React.createElement(
 											"h4",
 											{ className: "" },
 											React.createElement(
 												"strong",
 												null,
-												"Random Text"
+												"Compare"
 											)
 										),
-										React.createElement("input", { type: "text", value: this.state.value, className: "form-control ", id: "text", onChange: this.handleChange, required: true })
+										React.createElement("input", { type: "boolean", value: this.state.value, className: "form-control ", id: "text", onChange: this.handleChange, required: true })
 									)
 								)
 							)
@@ -19906,9 +19906,7 @@
 										React.createElement(
 											"h2",
 											null,
-											this.state.text,
-											" Reversed: ",
-											this.state.text.split("").reverse().join("")
+											this.state.text
 										)
 									)
 								)

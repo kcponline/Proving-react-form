@@ -7,9 +7,9 @@ var Form = React.createClass({
 	// Here we set a generic state associated with the text being searched for
 	getInitialState: function(){
 		return {
-			num1: 0,
-			num2: 0,
-			text: ""
+			num1: "",
+			num2: "",
+			text: true
 		}
 	},
 
@@ -50,18 +50,18 @@ var Form = React.createClass({
 
 									<form>
 										<div className="form-group">
-											<h4 className=""><strong>Number 1</strong></h4>
+											<h4 className=""><strong>Quarterback 1</strong></h4>
 
 											{/*Note how each of the form elements has an id that matches the state. This is not necessary but it is convenient.
 												Also note how each has an onChange event associated with our handleChange event. 
 											*/}
-											<input type="number" value={this.state.value} className="form-control " id="num1" onChange= {this.handleChange} required/>
+											<input type="text" value={this.state.value} className="form-control " id="num1" onChange= {this.handleChange} required/>
 
-											<h4 className=""><strong>Number 2</strong></h4>
-											<input type="number" value={this.state.value} className="form-control " id="num2" onChange= {this.handleChange} required/>
+											<h4 className=""><strong>Quarterback 2</strong></h4>
+											<input type="text" value={this.state.value} className="form-control " id="num2" onChange= {this.handleChange} required/>
 
-											<h4 className=""><strong>Random Text</strong></h4>
-											<input type="text" value={this.state.value} className="form-control " id="text" onChange= {this.handleChange} required/>
+											<h4 className=""><strong>Compare</strong></h4>
+											<input type="boolean" value={this.state.value} className="form-control " id="text" onChange= {this.handleChange} required/>
 
 										</div>
 
@@ -84,7 +84,8 @@ var Form = React.createClass({
 										<div className="form-group">
 
 											<h2>{this.state.num1} + {this.state.num2} = {this.state.num1 + this.state.num2}</h2>
-											<h2>{this.state.text} Reversed: {this.state.text.split("").reverse().join("")}</h2>
+											<h2>{this.state.text}</h2>
+											{/*<h2>{this.state.text} Reversed: {this.state.text.split("").reverse().join("")}</h2>*/}
 										</div>
 
 									</form>
