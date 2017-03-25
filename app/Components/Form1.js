@@ -42,15 +42,15 @@ var Form1 = React.createClass({
 					</div>
 
 					<div class="container">
-					<div className="col-sm-12">
-						<div className="panel-body text-center">
-							<div className="btn-group-vertical">
-								<button type="button" className="btn btn-primary">Clients</button>
-								<h3></h3>
-								<button type="button" className="btn btn-primary">Consultant Lookup</button>
-							</div>
-  						</div>
-					</div>
+						<div className="col-sm-12">
+							<div className="panel-body text-center">
+								<div className="btn-group-vertical">
+									<button type="button" className="btn btn-primary">Clients</button>
+									<h3></h3>
+									<button type="button" className="btn btn-primary">Consultant Lookup</button>
+								</div>
+	  						</div>
+						</div>
 					</div>
 
 					<div className="col-md-6">
